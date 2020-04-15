@@ -125,7 +125,7 @@ if ('indexedDB' in window) {
 }
 
 function sendData() {
-  fetch('https://pwagram-99adf.firebaseio.com/posts.json', {
+  fetch('https://us-central1-pwagram-18c54.cloudfunctions.net/storePostData', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -135,7 +135,7 @@ function sendData() {
       id: new Date().toISOString(),
       title: titleInput.value,
       location: locationInput.value,
-      image: '"https://firebasestorage.googleapis.com/v0/b/pwagram-18c54.appspot.com/o/sf-boat.jpg?alt=media&token=59ecbad6-ed95-4bf6-951d-219f3cb2550a"'
+      image: 'https://firebasestorage.googleapis.com/v0/b/pwagram-18c54.appspot.com/o/sf-boat.jpg?alt=media&token=59ecbad6-ed95-4bf6-951d-219f3cb2550a'
     })
   })
     .then(function(res) {
