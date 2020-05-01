@@ -70,7 +70,7 @@ workbox.routing.registerRoute(function (routeData) {
     })
 });
 
-workbox.precaching.precacheAndRoute([{"revision":"2cab47d9e04d664d93c8d91aec59e812","url":"favicon.ico"},{"revision":"b30611fae824ce157912d7f356879eaa","url":"index.html"},{"revision":"d11c7965f5cfba711c8e74afa6c703d7","url":"manifest.json"},{"revision":"45352e71a80a5c75d25e226e7330871b","url":"offline.html"},{"revision":"f27b4d5a6a99f7b6ed6d06f6583b73fa","url":"src/css/app.css"},{"revision":"edb6851fd7f76aec67d4ca36a09b166d","url":"src/css/feed.css"},{"revision":"1c6d81b27c9d423bece9869b07a7bd73","url":"src/css/help.css"},{"revision":"31b19bffae4ea13ca0f2178ddb639403","url":"src/images/main-image-lg.jpg"},{"revision":"c6bb733c2f39c60e3c139f814d2d14bb","url":"src/images/main-image-sm.jpg"},{"revision":"5c66d091b0dc200e8e89e56c589821fb","url":"src/images/main-image.jpg"},{"revision":"0f282d64b0fb306daf12050e812d6a19","url":"src/images/sf-boat.jpg"},{"revision":"530828228cc2b0d967ef9ada546842fe","url":"src/js/app.min.js"},{"revision":"c03b1b1cbe946f382947b645d7717462","url":"src/js/feed.min.js"},{"revision":"480f4a45212646274044b629017908c4","url":"src/js/fetch.min.js"},{"revision":"88ae80318659221e372dd0d1da3ecf9a","url":"src/js/idb.min.js"},{"revision":"713af0c6ce93dbbce2f00bf0a98d0541","url":"src/js/material.min.js"},{"revision":"d62c60740456a237885eba78e763c852","url":"src/js/promise.min.js"},{"revision":"a4d4cb3fb469d7c5e563403c9bac634c","url":"src/js/utility.min.js"}]);
+workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
 
 self.addEventListener('sync', function(event) {
   console.log('[Service Worker] Background syncing', event);
